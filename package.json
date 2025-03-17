@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "css:dev": "npx @tailwindcss/cli -i assets/css/main.css -o assets/css/styles.css --watch",
-    "css:build": "npx @tailwindcss/cli -i assets/css/main.css -o assets/css/styles.css --minify",
+    "css:dev": "npx @tailwindcss/cli -i assets/css/main.css -o _site/assets/css/styles.css --watch",
+    "css:build": "npx @tailwindcss/cli -i assets/css/main.css -o _site/assets/css/styles.css --minify",
     "jekyll:dev": "bundle exec jekyll serve --incremental --port 4001 --livereload --livereload-port 35730",
     "jekyll:build": "JEKYLL_ENV=production bundle exec jekyll build",
     "dev": "concurrently \"npm run css:dev\" \"npm run jekyll:dev\"",
